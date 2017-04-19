@@ -1,1 +1,39 @@
-{     "devDependencies": {         "angular-crypto": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-angular-crypto",     "homepage": "https://github.com/npmdoc/node-npmdoc-angular-crypto",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-angular-crypto.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### api documentation for  [angular-crypto (v0.0.3)](https://github.com/gdi2290/angular-crypto#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-angular-crypto.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-angular-crypto) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-angular-crypto.svg)](https://travis-ci.org/npmdoc/node-npmdoc-angular-crypto)",
+    "devDependencies": {
+        "angular-crypto": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-angular-crypto",
+    "keywords": [
+        "documentation",
+        "angular-crypto"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_angular_crypto.js",
+    "name": "npmdoc-angular-crypto",
+    "nameAlias": "npmdoc_angular_crypto",
+    "nameOriginal": "npmdoc-angular-crypto",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-angular-crypto.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
