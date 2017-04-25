@@ -1,6 +1,6 @@
 # npmdoc-angular-crypto
 
-#### api documentation for  [angular-crypto (v0.0.3)](https://github.com/gdi2290/angular-crypto#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-angular-crypto.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-angular-crypto) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-angular-crypto.svg)](https://travis-ci.org/npmdoc/node-npmdoc-angular-crypto)
+#### basic api documentation for  [angular-crypto (v0.0.3)](https://github.com/gdi2290/angular-crypto#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-angular-crypto.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-angular-crypto) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-angular-crypto.svg)](https://travis-ci.org/npmdoc/node-npmdoc-angular-crypto)
 
 #### angular-crypto provides standard and secure cryptographic algorithms for Angular.js with support for: MD5, SHA-1, SHA-256, RC4, Rabbit, AES, DES, PBKDF2, HMAC, OFB, CFB, CTR, CBC, Base64
 
@@ -83,7 +83,8 @@
         "start": "grunt",
         "test": "grunt test"
     },
-    "version": "0.0.3"
+    "version": "0.0.3",
+    "bin": {}
 }
 ```
 
